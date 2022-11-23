@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" manifest="damas.manifest">
+	<head>
+		<meta charset="UTF-8">
+		<title>Checkers</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="Checkers.js"></script>
+	</head>
+	<body>
+		<h1>Checkers</h1>
+		<p id="movimientos">Movimientos: <span id="count">0</span></p>
+		<p id="esTurno">Empiezan Blancas: </p>
+		<canvas id="lienzo" width="600" height="300"></canvas>
+		<br><br>
+		<input type="button" id="resetButton" value="New game">
+		<input type="button" id="loadButton" value="reloud">
+		<input type="button" id="saveButton" value="save game">
+		<br>
+		<hr>
+		<br>
+		<label for="empateButton">Table* : </label>
+		<input type="button" id="empateButton" value="Tablas">
+		<p> *: You need Confirmation from  the opponent. </p>
+		<div id="moveBlancas"><h3>Blancas</h3></div>
+		<div id="moveNegras"><h3>Negras</h3></div>
+		<script>
+			iniciarJuego(document.getElementById('lienzo'), document.getElementById('count'));
+		</script>		
+	</body>
+</html>
+
